@@ -4,7 +4,7 @@
 #container {
   display: inline-block;
   position: relative;
-  width: 70%;
+  width: 100%;
   overflow: hidden; /* 이미지가 확대되어도 프레임을 벗어나지 않도록 설정 */
 }
 
@@ -21,12 +21,12 @@
 }
 
 .circle-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 15px;
   object-fit: cover; 
   object-position: center; 
-  aspect-ratio: 1 / 1; 
+  // aspect-ratio: 1 / 1; 
   max-height: 100%;
 }
 
