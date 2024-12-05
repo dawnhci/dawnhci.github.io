@@ -30,17 +30,17 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Dawon Kim
-  image             : "/assets/images/1.png"
+  image             : "/assets/images/photo.png"
   video             : "/assets/video/video.mp4"
 # behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
+  email             : dawonkim@sogang.ac.kr
 # facebook          : your_username
 # github            : your_username
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : your_username
+# linkedin          : your_username
 # medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
