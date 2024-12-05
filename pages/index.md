@@ -4,8 +4,11 @@ permalink: /
 ---
 
 {% include landing.html %}
+
+
 <br>
-<!-- NEWS -->
+
+<!-- NEWS
 <h3 style="padding: 0 20px;">
   <a href="/news">News</a>
 </h3>
@@ -72,6 +75,4 @@ permalink: /
         }
     }
 </script>
-
-
-<br> 
+<br>  -->

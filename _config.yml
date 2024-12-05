@@ -22,6 +22,9 @@ nav_exclude:                                            # The following paths ar
   - pages/about.md
   - pages/news.md
   - pages/blog.html
+  - pages/research.html
+  - pages/projects.html
+  - pages/film.html
 
 
 ### Author Info ###
