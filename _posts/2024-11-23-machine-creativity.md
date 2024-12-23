@@ -6,7 +6,6 @@ image: /images/machinecreativity.png
 categories: research
 author: "Dawon Kim"
 authors: "<strong><u>Dawon Kim</u></strong> & Young June Sah"
-venue: "Submission"
+venue: "Under review in Proceedings of Human-Computer Interaction Korea 2025"
 pdf: /pdf/DawonKim_MachineCreativity_HCI2025_UnderReview.pdf 
 ---
-<u>Under review in Proceedings of Human-Computer Interaction Korea 2025</u>
