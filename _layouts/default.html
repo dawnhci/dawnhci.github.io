@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Dawon Kim</title>
+  <title>{{ site.name }}</title>
   <link rel="icon" href="{{ site.favicon }}" type="image/x-icon">
 
   <meta charset="UTF-8">
-  <meta name="author" content="Dawon Kim">
+  <meta name="author" content="{{ site.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
 </head>
@@ -22,6 +22,8 @@
     <p>
       I am a graduate student at Sogang University exploring the intersection of art, technology, and human perception.
       My research focuses on developing virtual agents that facilitate empathetic and personalized human-AI experiences.
+      I am working towards creating a future of harmonious human-machine symbiosis through human-centered design and
+      technology.
     </p>
     <a href="mailto:danywony@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     <p class="header-links">
@@ -34,21 +36,60 @@
     <h2>Research & Projects</h2>
     <p>I am interested in Human-Computer Interaction, Anthropomorphic AI, Virtual Humans, and Human-Centered Design in Immersive Media.</p>
     <div class="project">
-      <div class="project-thumbnail">
-        <img src="{{ post.image }}" alt="project image" />
+      {% for post in site.posts %}
+      {% if post.categories contains 'research' %}
+      <div class="project-item">
+        <div class="project-thumbnail">
+          <img src="{{ post.image }}" alt="Project Image">
+        </div>
+        <div class="project-details">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.authors }}</p>
+          <p><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</p>
+          <p>
+            {% if post.pdf %}<a href="{{ post.pdf }}">[PDF]</a>{% endif %}
+            {% if post.arxiv %}<a href="{{ post.arxiv }}">[arXiv]</a>{% endif %}
+            {% if post.video %}<a href="{{ post.video }}">[Video]</a>{% endif %}
+          </p>
+          <p>{{ post.excerpt }}</p>
+        </div>
       </div>
-      <div class="project-details">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.authors }}</p>
-        <p><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</p>
-        <p>
-          {% if post.pdf %}<a href="{{ post.pdf }}">[PDF]</a>{% endif %}
-          {% if post.arxiv %}<a href="{{ post.arxiv }}">[arXiv]</a>{% endif %}
-          {% if post.video %}<a href="{{ post.video }}">[Video]</a>{% endif %}
-        </p>
-      </div>
+      {% endif %}
+      {% endfor %}
     </div>
   </section>
+
+  <!-- TV & Films Section -->
+  <section class="tv-films">
+    <h2>TV & Films</h2>
+    <p>Majored in Animation and produced 6 student films during undergraduate studies. 3+ years of experience as a concept designer and animator for animated feature films and TV shows, currently streaming globally.</p>
+    <div class="project">
+      {% for post in site.posts %}
+      {% if post.categories contains 'TVFilms' %}
+      <div class="project-item">
+        <div class="project-thumbnail">
+          <img src="{{ post.image }}" alt="TV/Film Image">
+        </div>
+        <div class="project-details">
+          <h3>{{ post.title }}</h3>
+          <p><em>{{ post.categories }}</em></p>
+          <p>{{ post.date | date: "%Y-%m-%d" }}</p>
+          <p>
+            {% if post.website %}<a href="{{ post.website }}">[Website]</a>{% endif %}
+            {% if post.video %}<a href="{{ post.video }}">[Video]</a>{% endif %}
+          </p>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Built with Jekyll, design inspired by leonidk.com.</p>
+  </footer>
 </body>
 
 </html>
