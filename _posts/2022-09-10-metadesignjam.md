@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Controls-At-Hands & Safety Mode"
+title:  "Meta Design Jam in APAC, Seoul National University"
 date:   2022-09-10 00:00:00 +00:00
 image: /images/metaapac.png
 categories: research
 author: "Dawon Kim"
-authors: "Design Research Contributor, Participant of <strong><u>Team Entertainment</u></strong> @ Seoul National University"
-venue: "TTC Labs, Data Transparency and Control in XR and the Metaverse: Early UX explorations with people in APAC"
+authors: "Design Research Contributor, Participant of Team Entertainment"
+venue: "Meta TTC Labs, Data Transparency and Control in XR and the Metaverse: Early UX explorations with people in APAC"
 pdf: https://www.ttclabs.net/site/assets/files/11085/data_transparency_and_control_in_xr_and_the_metaverse_report.pdf 
 report: https://www.ttclabs.net/report/data-transparency-and-control-in-the-metaverse
 ---
