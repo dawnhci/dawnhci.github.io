@@ -9,4 +9,3 @@ authors: "<strong>Dawon Kim</strong> & Young June Sah"
 venue: "Under review in Proceedings of Human-Computer Interaction Korea 2025"
 pdf: /pdf/DawonKim_MachineCreativity_HCI2025_UnderReview.pdf 
 ---
-This study examined how artist statements influence perceptions of human versus AI-generated artwork through a survey of 300 participants. Results showed that AI-generated works can achieve comparable acceptance to human-created works when they effectively convey creative intent through artist statements.
