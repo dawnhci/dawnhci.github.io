@@ -2,7 +2,7 @@
 layout: post
 title:  "AI as a Commercial Artist: How Intention and Context Shape Human Perception of Machine Creativity"
 date:   2024-11-23 00:00:00 +00:00
-image: /images/machinecreativity.png
+image: /images/mcreativity.png
 categories: research
 author: "Dawon Kim"
 authors: "<strong><u>Dawon Kim</u></strong> & Young June Sah"
