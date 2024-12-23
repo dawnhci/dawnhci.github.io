@@ -14,6 +14,7 @@ avatar: images/photo.jpg
 #
 # Flags below are optional
 #
+favicon: /favicon.ico
 
 # Includes an icon in the footer for each username you enter
 footer-links:
