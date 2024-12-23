@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Meta Design Jam in APAC, Seoul National University"
+title:  "Meta Design Jam in APAC at Seoul National University"
 date:   2022-09-10 00:00:00 +00:00
 image: /images/metaapac.png
 categories:
