@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "“Rainbow Ruby 2” (2020) 3D Animated Television Series"
+title:  "“Rainbow Ruby 2” 3D Animated Television Series"
 date:   2020-03-01 00:00:00 +00:00
 image: /images/rainbowruby2.png
 categories:

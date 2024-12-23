@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "“Creaky Breath” (2016) Animated Short Film"
+title:  "“Creaky Breath” Animated Short Film"
 date:   2016-12-01 00:00:00 +00:00
 image: /images/creakybreath.png
 categories:
