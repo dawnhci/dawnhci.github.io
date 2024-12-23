@@ -30,20 +30,19 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-display: auto;
-  line-height: 1.2;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-display: auto;
 }
 
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
@@ -53,7 +52,7 @@ h2 {
 
 h3 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   font-display: auto;
   padding: 0px;
@@ -66,10 +65,10 @@ h1 {
   font-size: 32px;
   font-weight: normal;
   font-display: auto;
-
+  text-align: center;
   padding: 0px;
-  margin-block-start: 16px;
-  margin-block-end: 16px;
+  margin-block-start: 14px;
+  margin-block-end: 14px;
   margin-left: 0px;
   margin-right: 0px;
 
@@ -104,24 +103,3 @@ span.highlight {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 //@import "svg-icons";
-
-.thumbnail {
-  width: 100%; /* 부모 컨테이너 크기에 맞게 조정 */
-  height: auto; /* 비율 유지 */
-  max-width: 100%; /* 최대 크기를 컨테이너 크기로 제한 */
-  aspect-ratio: 1 / 1; /* 가로 3 : 세로 2 비율 유지 */
-  object-fit: cover; /* 이미지 비율을 유지하면서 영역 채우기 */
-  object-position: center; /* 이미지를 중앙에 정렬 */
-  border-radius: 10px; /* 모서리 둥글게 */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
-}
-
-
-//.profile-image {
-//  width: 150px; /* 원하는 크기로 설정 */
-// height: 150px; /* 원형을 유지하기 위해 width와 height를 동일하게 설정 */
-//  border-radius: 50%; /* 원형으로 만들기 */
-//  object-fit: cover; /* 이미지가 프레임을 채우도록 설정 */
-//  display: block; /* 중앙 정렬을 위해 설정 */
-//  margin: 0 auto; /* 중앙 정렬 */
-//}
