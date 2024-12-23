@@ -122,8 +122,10 @@
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          
           {% for post in site.posts %}
-            {% if post.categories contains 'tvfilms' %}
+          {% for cat in post.categories %}
+          {% if cat == 'tvfilms' %}
               <tr>
                 <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
                   <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -152,6 +154,7 @@
                 </td>
               </tr>
             {% endif %}
+          {% endfor %}
           {% endfor %}
         </table>
         
