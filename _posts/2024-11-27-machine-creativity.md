@@ -9,4 +9,4 @@ authors: "<strong><u>Dawon Kim</u></strong> & Young June Sah"
 venue: "Under review in Proceedings of Human-Computer Interaction Korea"
 pdf: /pdf/DawonKim_MachineCreativity_HCI2025_UnderReview.pdf 
 ---
-* Submission: November 2024
+Submission: November 2024
