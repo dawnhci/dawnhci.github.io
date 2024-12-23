@@ -31,7 +31,7 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+            <td style="padding:2.5%;width:80%;vertical-align:middle">
               <h1 style="text-align:left">Dawon Kim</h1>
               <h3>Graduate HCI Researcher, Designer, and XR Developer</h3>
               <p>I am a graduate student at Sogang University exploring the intersection of art, technology, and human perception. My research focuses on developing virtual agents that facilitate empathetic and personalized human-AI experiences. I am working towards creating a future of harmonious human-machine symbiosis through human-centered design and technology.
@@ -39,7 +39,7 @@
                 <p>Curriculum Vitae / Statement of Purpose / Personal Statement / DEI Statement</p>
 
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:2.5%;width:20%;max-width:20%">
               <img style="width:100%;max-width:100%" alt="profile photo" src="images/photo.jpeg">
             </td>
           </tr>
@@ -61,10 +61,10 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:230px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:200px; height:auto; max-width:100%; border-radius:15px;" />
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:250px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:230px; height:auto; max-width:100%; border-radius:15px;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:80%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -119,10 +119,10 @@
           {% for cat in post.categories %}
           {% if cat == 'Intel' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:230px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:200px; height:auto; max-width:100%; border-radius:15px;" />
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:250px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:230px; height:auto; max-width:100%; border-radius:15px;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:80%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
@@ -186,10 +186,10 @@
           {% for cat in post.categories %}
           {% if cat != 'research' and cat != 'Intel' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:230px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:200px; height:auto; max-width:100%; border-radius:15px;" />
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:250px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:230px; height:auto; max-width:100%; border-radius:15px;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2.5%;width:80%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
