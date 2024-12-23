@@ -105,7 +105,7 @@ span.highlight {
 //@import "svg-icons";
 
 .thumbnail {
-  width: 100%; /* 부모 컨테이너 크기에 맞게 조정 */
+  width: 250px; /* 부모 컨테이너 크기에 맞게 조정 */
   height: auto; /* 비율 유지 */
   max-width: 100%; /* 최대 크기를 컨테이너 크기로 제한 */
   aspect-ratio: 3 / 2; /* 가로 3 : 세로 2 비율 유지 */
@@ -115,11 +115,12 @@ span.highlight {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
 
-.profile-image {
-  width: 150px; /* 원하는 크기로 설정 */
-  height: 150px; /* 원형을 유지하기 위해 width와 height를 동일하게 설정 */
-  border-radius: 50%; /* 원형으로 만들기 */
-  object-fit: cover; /* 이미지가 프레임을 채우도록 설정 */
-  display: block; /* 중앙 정렬을 위해 설정 */
-  margin: 0 auto; /* 중앙 정렬 */
-}
+
+//.profile-image {
+//  width: 150px; /* 원하는 크기로 설정 */
+// height: 150px; /* 원형을 유지하기 위해 width와 height를 동일하게 설정 */
+//  border-radius: 50%; /* 원형으로 만들기 */
+//  object-fit: cover; /* 이미지가 프레임을 채우도록 설정 */
+//  display: block; /* 중앙 정렬을 위해 설정 */
+//  margin: 0 auto; /* 중앙 정렬 */
+//}
