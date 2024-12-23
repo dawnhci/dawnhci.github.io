@@ -1,1 +1,3 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# dawnhci.github.io
+
+This website is built with Jekyll and is a modified design based on jonbarron.info and leonidk.com.
