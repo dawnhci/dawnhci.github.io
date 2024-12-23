@@ -3,7 +3,8 @@ layout: post
 title:  ""Business Proposal" (2022) Television Series"
 date:   2022-03-01 00:00:00 +00:00
 image: /images/businessproposal.png
-categories: tvfilms
+categories:
+  - tvfilms
 author: "Dawon Kim"
 authors: "Animator"
 venue: "SBS A&T"

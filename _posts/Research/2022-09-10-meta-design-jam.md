@@ -3,7 +3,8 @@ layout: post
 title:  "Meta Design Jam in APAC, Seoul National University"
 date:   2022-09-10 00:00:00 +00:00
 image: /images/metaapac.png
-categories: research
+categories:
+  - research
 author: "Dawon Kim"
 authors: "Design Research Contributor, Participant of Team Entertainment"
 venue: "Data Transparency and Control in XR and the Metaverse: Early UX explorations with people in APAC"
