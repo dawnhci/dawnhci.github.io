@@ -1,3 +1,3 @@
 # dawnhci.github.io
 
-This website is built on Jekyll and design modification of jonbarron.info and leonidk.com.
+This website is built with Jekyll and is a modified design based on jonbarron.info and leonidk.com.
