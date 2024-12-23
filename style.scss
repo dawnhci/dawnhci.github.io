@@ -65,6 +65,7 @@ h1 {
   font-size: 32px;
   font-weight: normal;
   font-display: auto;
+
   padding: 0px;
   margin-block-start: 14px;
   margin-block-end: 14px;
@@ -104,10 +105,9 @@ span.highlight {
 //@import "svg-icons";
 
 img {
-  width: 200px; /* 고정된 가로 크기 */
-  height: 150px; /* 고정된 세로 크기 */
-  object-fit: cover; /* 이미지 비율을 유지하며 영역을 채움 */
-  border-radius: 15px; /* 둥근 모서리 */
+  max-width: 100%; /* 이미지를 컨테이너 크기에 맞게 조정 */
+  height: auto; /* 비율 유지 */
+  border-radius: 15px; /* 모서리 둥글게 */
 }
 
 td img {
