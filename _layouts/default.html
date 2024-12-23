@@ -29,7 +29,7 @@
               <p>I am a graduate student at Sogang University exploring the intersection of art, technology, and human perception. My research focuses on developing virtual agents that facilitate empathetic and personalized human-AI experiences. I am working towards creating a future of harmonious human-machine symbiosis through human-centered design and technology.
                 <p><a href="mailto:danywony@gmail.com"><i class="fas fa-envelope"></i></a></p>
                 
-                <p style="text-align:right;font-size:small">[Curriculum Vitae] [Statement of Purpose] [Personal Statement] [DEI Statement]</p>
+                <p style="text-align:left;font-size:small">[Curriculum Vitae] [Statement of Purpose] [Personal Statement] [DEI Statement]</p>
             </td>
              <!--
             <td style="padding:2.5%;width:30%;min-width:150px">
@@ -55,12 +55,13 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
+            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200px">
+              <img src="{{post.image}}" alt="project image" class="thumbnail">
+            </td>
             <td style="padding:2.5%;width:80%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br><p>{{post.authors}}</p>
+              <br><p><em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}</p>
               <br>
               {% if post.pdf %}
               [<a href="{{post.pdf}}">pdf</a>] 
@@ -88,9 +89,6 @@
               {% endif %}
               <p></p>
               {{ post.excerpt }}
-            </td>
-            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200px">
-              <img src="{{post.image}}" alt="project image" class="thumbnail">
             </td>
           </tr>
           {% endif %}
