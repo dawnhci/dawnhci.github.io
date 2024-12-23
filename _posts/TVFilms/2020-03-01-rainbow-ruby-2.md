@@ -3,8 +3,7 @@ layout: post
 title:  "“Rainbow Ruby 2” (2020) 3D Animated Television Series"
 date:   2020-03-01 00:00:00 +00:00
 image: /images/rainbowruby2.png
-categories:
-  - TVFilms
+categories: TVFilms
 author: "Dawon Kim"
 authors: "Concept Designer"
 venue: "CJ ENM"
