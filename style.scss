@@ -1,123 +1,110 @@
-/* General Styles */
-body {
-  font-family: 'Lato', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
 
 a {
   color: #1772d0;
   text-decoration: none;
 }
 
+a:focus,
 a:hover {
   color: #f09228;
+  text-decoration: none;
 }
 
-/* Header Section */
-.header {
-  text-align: center;
-  margin: 20px auto;
-  max-width: 800px;
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-display: auto;
+  line-height: 1.2;
 }
 
-.header h1 {
-  font-size: 32px;
-  margin: 10px 0;
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-display: auto;
 }
 
-.header h3 {
-  font-size: 20px;
-  margin: 5px 0;
-  font-weight: normal;
-}
-
-.header p {
-  margin: 10px 0;
-}
-
-.header a {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 24px;
-}
-
-.header-links {
-  font-size: small;
-  margin-top: 5px;
-}
-
-/* Section Styles */
-section {
-  margin: 40px auto;
-  max-width: 800px;
-}
-
-section h2 {
+h2 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 26px;
-  margin-bottom: 20px;
+  font-display: auto;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  display:inline; 
 }
 
-/* Project Styles */
-.project {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+h3 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-display: auto;
+  padding: 0px;
+  margin: 0px;
+  display:inline; 
 }
 
-.project-item {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+h1 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-display: auto;
+
+  padding: 0px;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+
 }
 
-.project-thumbnail img {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
 
-.project-details {
-  flex: 1;
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
-.project-details h3 {
-  margin: 0 0 5px 0;
-  font-size: 20px;
-  font-weight: bold;
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
-.project-details p {
-  margin: 5px 0;
+span.highlight {
+  background-color: #ffffd0;
 }
 
-/* Footer Styles */
-.footer {
-  text-align: center;
-  margin: 20px 0;
-  font-size: small;
-  color: #666;
+
+.thumbnail {
+  width: 100%; /* 부모 컨테이너 크기에 맞게 조정 */
+  height: auto; /* 비율 유지 */
+  max-width: 100%; /* 최대 크기를 컨테이너 크기로 제한 */
+  //aspect-ratio: 3 / 2; /* 가로 3 : 세로 2 비율 유지 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 영역 채우기 */
+  object-position: center; /* 이미지를 중앙에 정렬 */
+  border-radius: 15px; /* 모서리 둥글게 */
+  //box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
 
-.footer p {
-  margin: 0;
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .project-item {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-thumbnail img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .project-details {
-    text-align: center;
-  }
-}
+//.profile-image {
+//  width: 150px; /* 원하는 크기로 설정 */
+// height: 150px; /* 원형을 유지하기 위해 width와 height를 동일하게 설정 */
+//  border-radius: 50%; /* 원형으로 만들기 */
+//  object-fit: cover; /* 이미지가 프레임을 채우도록 설정 */
+//  display: block; /* 중앙 정렬을 위해 설정 */
+//  margin: 0 auto; /* 중앙 정렬 */
+//}
