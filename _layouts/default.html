@@ -54,9 +54,6 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200px">
-              <img src="{{post.image}}" alt="project image" class="thumbnail">
-            </td>
             <td style="padding:2.5%;width:80%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
@@ -91,6 +88,9 @@
               <p></p>
               {{ post.excerpt }}
             </td>
+            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200px">
+              <img src="{{post.image}}" alt="project image" class="thumbnail">
+            </td>
           </tr>
           {% endif %}
           {% endfor %}
@@ -112,7 +112,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
+          {% if cat == 'TVFilms' %}
           <tr>
             <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200">
               <img src="{{post.image}}" alt="project image" class="thumbnail">
