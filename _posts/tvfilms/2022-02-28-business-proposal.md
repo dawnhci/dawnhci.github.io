@@ -8,4 +8,6 @@ categories:
 author: "Dawon Kim"
 authors: "Animator"
 venue: "SBS A&T"
+imdb: https://www.imdb.com/title/tt14819828/
+netflix: https://www.netflix.com/title/81509440
 ---
