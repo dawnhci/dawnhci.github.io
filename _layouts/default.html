@@ -39,7 +39,8 @@
             </td>
           </tr>
         </table>
-
+        <br>
+        <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -51,7 +52,6 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
           {% for post in site.posts %}
           {% if post.categories contains 'research' %}
           <tr>
@@ -120,9 +120,7 @@
             </td>
           </tr>
         </table>
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          
           {% for post in site.posts %}
           {% if post.categories contains 'tvfilms' %}
               <tr>
@@ -155,7 +153,6 @@
             {% endif %}
           {% endfor %}
         </table>
-        
         <br>
         <br>
         <br>
@@ -169,7 +166,6 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'other' %}
