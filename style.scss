@@ -114,3 +114,12 @@ img {
   border-radius: 10px; /* 모서리 둥글게 */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
+
+.profile-image {
+  width: 350px; /* 원하는 크기로 설정 */
+  height: 350px; /* 원형을 유지하기 위해 width와 height를 동일하게 설정 */
+  border-radius: 50%; /* 원형으로 만들기 */
+  object-fit: cover; /* 이미지가 프레임을 채우도록 설정 */
+  display: block; /* 중앙 정렬을 위해 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
