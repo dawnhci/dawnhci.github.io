@@ -1,146 +1,73 @@
-//
-// IMPORTS
-//
+/* General Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
 
-// Syntax highlighting import is placed at the bottom for clarity
-// @import "reset";
-// @import "variables";
-// @import "highlights";
-// @import "svg-icons";
-
-/**************/
-/* BASE RULES */
-/**************/
-
-/* 링크 스타일 */
 a {
   color: #1772d0;
   text-decoration: none;
 }
 
-a:focus,
 a:hover {
   color: #f09228;
-  text-decoration: none;
 }
 
-/* 텍스트 스타일 */
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.2; /* 읽기 편한 줄 간격 */
+/* Header Section */
+.header {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
-/* 강조 텍스트 */
-strong {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-/**************/
-/* HEADER STYLES */
-/**************/
-
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+.header h1 {
   font-size: 32px;
-  font-weight: normal;
-  margin: 16px 0; /* 상단과 하단 간격 */
-}
-
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 26px;
-  font-weight: normal;
-  margin: 16px 0; /* 상단과 하단 간격 */
-}
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px; /* 가독성을 위해 조금 키움 */
-  font-weight: 700;
   margin: 10px 0;
 }
 
-/**************/
-/* IMAGE STYLES */
-/**************/
-
-/* 기본 썸네일 스타일 */
-.thumbnail {
-  width: 100%; /* 부모 컨테이너 크기에 맞게 조정 */
-  height: auto; /* 비율 유지 */
-  object-fit: cover; /* 이미지 비율 유지 및 채우기 */
-  object-position: center; /* 이미지 중앙 정렬 */
-  border-radius: 15px; /* 둥근 모서리 */
+.header h3 {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: normal;
 }
 
-/* 프로필 이미지 */
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* 원형 이미지 */
-  object-fit: cover; /* 비율 유지 */
-  display: block;
-  margin: 0 auto; /* 중앙 정렬 */
+.header p {
+  margin: 10px 0;
 }
 
-/**************/
-/* EFFECTS */
-/**************/
-
-/* 페이드 효과 */
-.fade {
-  transition: opacity 0.2s ease-in-out;
+/* Research Section */
+.research {
+  margin: 40px auto;
+  max-width: 800px;
 }
 
-/* 투명도 전환 효과 */
-.one,
-.two {
-  width: 160px;
-  height: 160px;
-  position: relative;
-  transition: opacity 0.2s ease-in-out;
+.research h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-/**************/
-/* HIGHLIGHT STYLES */
-/**************/
-
-span.highlight {
-  background-color: #ffffd0; /* 강조 표시 */
+.research .project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-/**************/
-/* MEDIA QUERIES */
-/**************/
+.project-thumbnail img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
 
-/* 반응형 썸네일 및 텍스트 조정 */
-@media (max-width: 1200px) {
-  .thumbnail {
-    width: 100%; /* 화면 크기에 맞게 썸네일 조정 */
-    max-width: 300px; /* 최대 크기 제한 */
-    margin: 0 auto; /* 중앙 정렬 */
-  }
+.project-details {
+  flex: 1;
+}
 
-  h1 {
-    font-size: 28px; /* 작은 화면에서 글꼴 크기 축소 */
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  body {
-    font-size: 14px; /* 기본 글자 크기 축소 */
-  }
+.project-details h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
 }

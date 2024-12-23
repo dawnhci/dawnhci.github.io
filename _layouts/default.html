@@ -2,127 +2,53 @@
 <html lang="en">
 
 <head>
-  <title>{{ site.name }}</title>
+  <title>Dawon Kim</title>
   <link rel="icon" href="{{ site.favicon }}" type="image/x-icon">
 
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <meta name="author" content="{{ site.name }}" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Dawon Kim">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;margin:0 auto;border-spacing:0;border-collapse:separate;">
-    <tr>
-      <td>
-        <!-- Header Section -->
-        <table style="width:100%;margin:0 auto;border-spacing:0;border-collapse:separate;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h1>Dawon Kim</h1>
-              <h3>Graduate HCI Researcher, Designer, and XR Developer</h3>
-              <p>I am a graduate student at Sogang University exploring the intersection of art, technology, and human perception. My research focuses on developing virtual agents that facilitate empathetic and personalized human-AI experiences. I am working towards creating a future of harmonious human-machine symbiosis through human-centered design and technology.</p>
-              <p>
-                <a href="mailto:danywony@gmail.com" aria-label="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </p>
-              <p style="text-align:left;font-size:small">
-                [Curriculum Vitae] [Statement of Purpose] [Personal Statement] [DEI Statement]
-              </p>
-            </td>
-          </tr>
-        </table>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Dawon Kim</h1>
+    <h3>Graduate HCI Researcher, Designer, and XR Developer</h3>
+    <p>
+      I am a graduate student at Sogang University exploring the intersection of art, technology, and human perception.
+      My research focuses on developing virtual agents that facilitate empathetic and personalized human-AI experiences.
+    </p>
+    <a href="mailto:danywony@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <p class="header-links">
+      [<a href="#">Curriculum Vitae</a>] [<a href="#">Statement of Purpose</a>]
+    </p>
+  </header>
 
-        <!-- Research Section -->
-        <table style="width:100%;margin:0 auto;border-spacing:0;border-collapse:separate;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research & Projects</h2>
-              <p>I am interested in Human-Computer Interaction, Anthropomorphic AI, Virtual Humans, and Human-Centered Design in Immersive Media.</p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;margin:0 auto;border-spacing:0;border-collapse:separate;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:80%;vertical-align:middle">
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.authors }}</p>
-              <p><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</p>
-              <p>
-                {% if post.pdf %}[<a href="{{ post.pdf }}">pdf</a>] {% endif %}
-                {% if post.arxiv %}[<a href="{{ post.arxiv }}">arxiv</a>] {% endif %}
-                {% if post.video %}[<a href="{{ post.video }}">video</a>] {% endif %}
-                {% if post.code %}[<a href="{{ post.code }}">code</a>] {% endif %}
-                {% if post.poster %}[<a href="{{ post.poster }}">poster</a>] {% endif %}
-                {% if post.slides %}[<a href="{{ post.slides }}">slides</a>] {% endif %}
-                {% if post.website %}[<a href="{{ post.website }}">website</a>] {% endif %}
-                {% if post.youtube %}[<a href="{{ post.youtube }}">youtube</a>] {% endif %}
-              </p>
-              <p>{{ post.excerpt }}</p>
-            </td>
-            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200px">
-              <img src="{{ post.image }}" alt="project image" class="thumbnail">
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <!-- TV & Films Section -->
-        <table style="width:100%;margin:0 auto;border-spacing:0;border-collapse:separate;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>TV & Films</h2>
-              <p>Majored in Animation and produced 6 student films during undergraduate studies. 3+ years of experience as a concept designer and animator for animated feature films and TV shows, currently streaming globally.</p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;margin:0 auto;border-spacing:0;border-collapse:separate;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'TVFilms' %}
-          <tr>
-            <td style="padding:2.5%;width:20%;vertical-align:middle;min-width:200px">
-              <img src="{{ post.image }}" alt="project image" class="thumbnail">
-            </td>
-            <td style="padding:2.5%;width:80%;vertical-align:middle">
-              <h3>{{ post.title }}</h3>
-              <p><em>{{ post.categories }} {{ post.course }}</em></p>
-              <p>{{ post.date | date: "%Y-%m-%d" }}</p>
-              <p>
-                {% if post.website %}<a href="{{ post.website }}">website</a> {% endif %}
-                {% if post.paper %}<a href="{{ post.paper }}">paper</a> {% endif %}
-                {% if post.patent %}<a href="{{ post.patent }}">patent</a> {% endif %}
-                {% if post.video %}<a href="{{ post.video }}">video</a> {% endif %}
-              </p>
-              <p>{{ post.excerpt }}</p>
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <!-- Footer Section -->
-        <table style="width:100%;margin:0 auto;border-spacing:0;border-collapse:separate;">
-          <tr>
-            <td style="padding:0">
-              <p style="text-align:right;font-size:small">Built with Jekyll, design inspired by leonidk.com.</p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+  <!-- Research Section -->
+  <section class="research">
+    <h2>Research & Projects</h2>
+    <p>I am interested in Human-Computer Interaction, Anthropomorphic AI, Virtual Humans, and Human-Centered Design in Immersive Media.</p>
+    <div class="project">
+      <div class="project-thumbnail">
+        <img src="{{ post.image }}" alt="project image" />
+      </div>
+      <div class="project-details">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.authors }}</p>
+        <p><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</p>
+        <p>
+          {% if post.pdf %}<a href="{{ post.pdf }}">[PDF]</a>{% endif %}
+          {% if post.arxiv %}<a href="{{ post.arxiv }}">[arXiv]</a>{% endif %}
+          {% if post.video %}<a href="{{ post.video }}">[Video]</a>{% endif %}
+        </p>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
