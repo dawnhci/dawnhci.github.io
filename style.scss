@@ -1,17 +1,4 @@
----
----
 
-//
-// IMPORTS
-//
-
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
 a {
   color: #1772d0;
   text-decoration: none;
@@ -23,7 +10,14 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-display: auto;
+}
+
 td,
 th,
 tr,
@@ -38,6 +32,20 @@ strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
+}
+
+h1 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-display: auto;
+  text-align: center;
+  padding: 0px;
+  margin-block-start: 14px;
+  margin-block-end: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+
 }
 
 h2 {
@@ -58,20 +66,6 @@ h3 {
   padding: 0px;
   margin: 0px;
   display:inline; 
-}
-
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
 }
 
 .one {
@@ -99,7 +93,13 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  a {
+    color: #1e90ff;
+  }
+}
