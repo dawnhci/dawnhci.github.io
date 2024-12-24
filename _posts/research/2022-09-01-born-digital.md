@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ""Born Digital" Interactive Media Art"
-date:   2022-12-31 00:00:00 +00:00
+date:   2022-09-01 00:00:00 +00:00
 image: /images/borndigital.png
 categories:
   - research
