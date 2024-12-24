@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meta Design Jam in APAC at Seoul National University"
-date:   2022-12-31 00:00:00 +00:00
+date:   2023-06-31 00:00:00 +00:00
 image: /images/metaapac.png
 categories:
   - research
@@ -11,4 +11,4 @@ venue: "Data Transparency and Control in XR and the Metaverse: Early UX explorat
 pdf: https://www.ttclabs.net/site/assets/files/11085/data_transparency_and_control_in_xr_and_the_metaverse_report.pdf 
 report: https://www.ttclabs.net/report/data-transparency-and-control-in-the-metaverse
 ---
-Developed and presented AR glasses user experience prototypes “[Controls-At-Hands](https://www.ttclabs.net/design/adjusting-the-level-of-data-being-shared)” and “[Safety Mode](https://www.ttclabs.net/design/using-body-based-data-to-support-peoples-wellbeing)” for data transparency at music festivals, featured in Meta’s 2024 official report ”Data Transparency and Control in XR and the Metaverse” (pp. 46-47, 75-76)
+Developed and presented AR glasses user experience prototypes “[Controls-At-Hands](https://www.ttclabs.net/design/adjusting-the-level-of-data-being-shared)” and “[Safety Mode](https://www.ttclabs.net/design/using-body-based-data-to-support-peoples-wellbeing)” for data transparency at music festivals, featured in Meta’s 2023 official report ”Data Transparency and Control in XR and the Metaverse” (pp. 46-47, 75-76)
