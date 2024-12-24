@@ -10,14 +10,7 @@ a:hover {
   text-decoration: none;
 }
 
-body {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
+body,
 td,
 th,
 tr,
@@ -91,15 +84,4 @@ h3 {
 
 span.highlight {
   background-color: #ffffd0;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-  a {
-    color: #1e90ff;
-  }
 }
