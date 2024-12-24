@@ -8,4 +8,5 @@ categories:
 author: "Dawon Kim"
 authors: "Director"
 venue: "Independent Film"
+video: https://drive.google.com/file/d/1HWz1JyZBnc_Kla65MatoLCq4tRjkjlPx/view?usp=sharing
 ---
