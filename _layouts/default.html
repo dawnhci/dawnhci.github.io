@@ -70,6 +70,9 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% if post.projectpage %}
+              [<a href="{{post.projectpage}}">project page</a>]&nbsp;
+              {% endif %}
               {% if post.pdf %}
               [<a href="{{post.pdf}}">pdf</a>]&nbsp;
               {% endif %}
@@ -78,6 +81,9 @@
               {% endif %}
               {% if post.arxiv %}
               [<a href="{{post.arxiv}}">arXiv</a>]&nbsp;
+              {% endif %}
+              {% if post.report %}
+              [<a href="{{post.report}}">report</a>]&nbsp;
               {% endif %}
               {% if post.video %}
               [<a href="{{post.video}}">video</a>]&nbsp;
@@ -102,12 +108,6 @@
               {% endif %}
               {% if post.article %}
               [<a href="{{post.article}}">article</a>]&nbsp;
-              {% endif %}
-              {% if post.report %}
-              [<a href="{{post.report}}">report</a>]&nbsp;
-              {% endif %}
-              {% if post.projectpage %}
-              [<a href="{{post.projectpage}}">project page</a>]&nbsp;
               {% endif %}
               <p></p>
               {{ post.excerpt }}
