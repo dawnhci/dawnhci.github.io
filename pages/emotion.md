@@ -1,7 +1,0 @@
-title
-
-abstract
-
-figure
-
-description
