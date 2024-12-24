@@ -8,5 +8,5 @@ categories:
 author: "Dawon Kim"
 authors: "<strong><u>Dawon Kim</u></strong> & Young June Sah"
 venue: "Under review in Proceedings of Human-Computer Interaction Korea 2025"
-pdf: /pdf/DawonKim_MachineCreativity_HCI2025_UnderReview.pdf 
+pdf: https://drive.google.com/file/d/1lmpm9npWGSJD4zhyU6pFnWahIGZtWcJK/view?usp=drive_link
 ---
