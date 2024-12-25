@@ -57,10 +57,10 @@
           {% for post in site.posts %}
           {% if post.categories contains 'news' %}
             <tr style="height: auto;">
-              <td style="padding:2.5%;width:10%;vertical-align:middle;min-width:120px">
+              <td style="padding:0px 2.5% 0px 2.5%;width:10%;vertical-align:middle;min-width:120px">
                 {{ post.date | date: "%b %Y" }}
               </td>
-              <td style="padding:2.5%;width:90%;vertical-align:middle">
+              <td style="padding:0px 2.5% 0px 2.5%;width:90%;vertical-align:middle">
                 {{ post.excerpt }}
               </td>
             </tr>
