@@ -53,20 +53,20 @@
           </tr>
         </table>
         
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;margin-top:0px;margin-bottom:0px;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin:0;">
           {% for post in site.posts %}
           {% if post.categories contains 'news' %}
-            <tr style="height: auto;">
-              <td style="padding:0px 2.5% 0px 2.5%;width:10%;vertical-align:middle;min-width:120px">
+            <tr style="height: auto; line-height: 1;">
+              <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
               </td>
-              <td style="padding:0px 2.5% 0px 2.5%;width:90%;vertical-align:middle">
+              <td style="padding: 0px 2.5% 0px 2.5%; width: 90%; vertical-align: middle;">
                 {{ post.excerpt }}
               </td>
             </tr>
           {% endif %}
           {% endfor %}
-        </table>
+        </table>        
         <br>      
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
