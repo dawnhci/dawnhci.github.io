@@ -72,7 +72,7 @@
           </tbody>
           
           <tbody id="all-news" style="display:none;">
-            {% for post in site.posts offset:3 %}
+            {% for post in site.posts %}
             {% if post.categories contains 'news' %}
             <tr style="height: auto; line-height: 0.1;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
