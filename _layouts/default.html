@@ -51,18 +51,26 @@
             </td>
           </tr>
         </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px;width:100%;vertical-align:middle">
+              <h2 style="margin:0;">News</h2>
+            </td>
+          </tr>
+        </table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% if post.categories contains 'news' %}
-          <tr style="height: auto;">
-                <td style="padding:2.5%;width:15%;vertical-align:middle">
-                  {{ post.date | date: "%b %Y" }}
-                </td>
-                <td style="padding:2.5%;width:85%;vertical-align:middle">
-                  {{ post.excerpt }}
-                </td>
-              </tr>
-            {% endif %}
+            <tr style="height: auto;">
+              <td style="padding:0px;width:10%;vertical-align:middle;min-width:120px">
+                {{ post.date | date: "%b %Y" }}
+              </td>
+              <td style="padding:0px;width:90%;vertical-align:middle">
+                {{ post.excerpt }}
+              </td>
+            </tr>
+          {% endif %}
           {% endfor %}
         </table>
         <br>      
