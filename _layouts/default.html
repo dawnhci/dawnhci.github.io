@@ -61,7 +61,7 @@
             {% assign news_posts = site.posts | where: "categories", "news" %}
             {% for post in news_posts %}
             {% if forloop.index <= 3 %}
-            <tr style="height: auto; line-height: 0.1; font-size: 14px;">
+            <tr style="height: auto; line-height: 1; font-size: 14px;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
               </td>
@@ -77,7 +77,7 @@
             {% assign news_posts = site.posts | where: "categories", "news" %}
             {% for post in news_posts %}
             {% if forloop.index > 3 %}
-            <tr style="height: auto; line-height: 0.1; font-size: 14px;">
+            <tr style="height: auto; line-height: 1; font-size: 14px;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
               </td>
