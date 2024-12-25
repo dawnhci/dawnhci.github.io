@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "“Business Proposal” TV Series"
+title:  "“Business Proposal” Television Series"
 date:   2022-02-28 00:00:00 +00:00
 image: /images/businessproposal.png
 categories:
