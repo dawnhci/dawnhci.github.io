@@ -75,8 +75,11 @@
           </tbody>
           
           <tbody id="all-news" style="display:none;">
-            {% for post in site.posts offset:3 %}
+            {% assign count = 0 %}
+            {% for post in site.posts %}
             {% if post.categories contains 'news' %}
+              {% assign count = count | plus: 1 %}
+              {% if count > 3 %}
             <tr style="height: auto; line-height: 0.1;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
