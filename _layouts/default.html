@@ -49,7 +49,7 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2 style="margin:0; display:inline;">News</h2>
-              [<a href="javascript:void(0);" id="toggle-news" style="font-size:14px; margin-left:10px; text-decoration:none; color:#007BFF;">more...</a>]
+              <a href="javascript:void(0);" id="toggle-news" style="font-size:14px; margin-left:10px; text-decoration:none; color:#007BFF;">[more...]</a>
             </td>
           </tr>
         </table>
@@ -92,10 +92,10 @@
             var toggleLink = document.getElementById('toggle-news');
             if (allNews.style.display === 'none') {
               allNews.style.display = 'table-row-group';
-              toggleLink.textContent = 'less...';
+              toggleLink.textContent = '[less...]';
             } else {
               allNews.style.display = 'none';
-              toggleLink.textContent = 'more...';
+              toggleLink.textContent = '[more...]';
             }
           });
         </script>
