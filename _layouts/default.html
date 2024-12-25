@@ -44,12 +44,13 @@
             </td>
           </tr>
         </table>
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2%; width:100%;vertical-align:middle">
               <h2 style="margin:0; display:inline;">News</h2>
-              <a href="javascript:void(0);" id="toggle-news" style="font-size:14px; margin-left:10px; text-decoration:none; color:#007BFF;">[more...]</a>
+              <a href="javascript:void(0);" id="toggle-news" style="font-size:14px; margin-left:10px; text-decoration:none; color:#007BFF;">
+                <i id="toggle-icon" class="fas fa-chevron-down"></i>
+              </a>
             </td>
           </tr>
         </table>
@@ -89,17 +90,17 @@
         <script>
           document.getElementById('toggle-news').addEventListener('click', function () {
             var allNews = document.getElementById('all-news');
-            var toggleLink = document.getElementById('toggle-news');
+            var toggleIcon = document.getElementById('toggle-icon');
             if (allNews.style.display === 'none') {
               allNews.style.display = 'table-row-group';
-              toggleLink.textContent = '[less...]';
+              toggleIcon.className = 'fas fa-chevron-up'; 
             } else {
               allNews.style.display = 'none';
-              toggleLink.textContent = '[more...]';
+              toggleIcon.className = 'fas fa-chevron-down'; 
             }
           });
         </script>
-             
+
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
