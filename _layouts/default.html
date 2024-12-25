@@ -45,19 +45,27 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% if post.categories contains 'news' %}
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
-              <p>
-                {{ post.excerpt }}
-              </p>
             </td>
           </tr>
-          {% endif %}
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts %}
+          {% if post.categories contains 'news' %}
+              <tr>
+                <td style="padding:2.5%;width:10%;vertical-align:middle;min-width:120px">
+                  {{ post.date | date: "%b %Y" }}
+                </td>
+                <td style="padding:2.5%;width:90%;vertical-align:middle">
+                  {{ post.excerpt }}
+                </td>
+              </tr>
+            {% endif %}
           {% endfor %}
         </table>
+        <br>      
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
