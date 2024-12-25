@@ -59,7 +59,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin:0;">
           <tbody id="recent-news">
             {% assign news_posts = site.posts | where: "categories", "news" %}
-            {% for post in news_posts limit:3 %}
+            {% for post in news_posts %}
+            {% if forloop.index <= 3 %}
             <tr style="height: auto; line-height: 0.1;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
@@ -74,7 +75,8 @@
           
           <tbody id="all-news" style="display:none;">
             {% assign news_posts = site.posts | where: "categories", "news" %}
-            {% for post in news_posts offset:3 limit:3 %}
+            {% for post in news_posts %}
+            {% if forloop.index > 3 %}
             <tr style="height: auto; line-height: 0.1;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
