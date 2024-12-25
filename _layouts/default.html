@@ -48,14 +48,16 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2 style="margin:0;">News</h2>
+              <h2 style="margin:0; display:inline;">News</h2>
+              <a href="javascript:void(0);" id="toggle-news" style="font-size:14px; margin-left:10px; text-decoration:none; color:#007BFF;">[more...]</a>
             </td>
           </tr>
         </table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin:0;">
-          {% for post in site.posts %}
-          {% if post.categories contains 'news' %}
+          <tbody id="recent-news">
+            {% for post in site.posts limit:3 %}
+            {% if post.categories contains 'news' %}
             <tr style="height: auto; line-height: 1;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
                 {{ post.date | date: "%b %Y" }}
@@ -64,9 +66,40 @@
                 {{ post.excerpt }}
               </td>
             </tr>
-          {% endif %}
-          {% endfor %}
-        </table>        
+            {% endif %}
+            {% endfor %}
+          </tbody>
+          
+          <tbody id="all-news" style="display:none;">
+            {% for post in site.posts offset:3 %}
+            {% if post.categories contains 'news' %}
+            <tr style="height: auto; line-height: 1;">
+              <td style="padding: 0px 2.5% 0px 2.5%; width: 10%; vertical-align: middle; min-width: 120px;">
+                {{ post.date | date: "%b %Y" }}
+              </td>
+              <td style="padding: 0px 2.5% 0px 2.5%; width: 90%; vertical-align: middle;">
+                {{ post.excerpt }}
+              </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+        
+        <script>
+          document.getElementById('toggle-news').addEventListener('click', function () {
+            var allNews = document.getElementById('all-news');
+            var toggleLink = document.getElementById('toggle-news');
+            if (allNews.style.display === 'none') {
+              allNews.style.display = 'table-row-group';
+              toggleLink.textContent = '[less...]';
+            } else {
+              allNews.style.display = 'none';
+              toggleLink.textContent = '[more...]';
+            }
+          });
+        </script>
+        
         <br>      
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
