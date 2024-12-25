@@ -12,4 +12,4 @@ pdf: https://www.ttclabs.net/site/assets/files/11085/data_transparency_and_contr
 report: https://www.ttclabs.net/report/data-transparency-and-control-in-the-metaverse
 slides: https://drive.google.com/file/d/10wWs1XgyMcjA0HlM_X9hN--oY_XFE6pq/view?usp=drive_link
 ---
-Developed and presented AR glasses user experience prototypes “[Controls-At-Hands](https://www.ttclabs.net/design/adjusting-the-level-of-data-being-shared)” and “[Safety Mode](https://www.ttclabs.net/design/using-body-based-data-to-support-peoples-wellbeing)” for data transparency at music festivals.
+Designed AR Glass user experience for music festivals with focus on body data transparency and control, featuring “[Controls-At-Hands](https://www.ttclabs.net/design/adjusting-the-level-of-data-being-shared)” and “[Safety Mode](https://www.ttclabs.net/design/using-body-based-data-to-support-peoples-wellbeing)” prototypes.
