@@ -114,3 +114,57 @@ span.highlight {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 //@import "svg-icons";
+
+/* 기본 스타일 */
+.profile-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.profile-text {
+  width: 70%;
+  padding: 2.5%;
+}
+
+.profile-image {
+  width: 30%;
+  padding: 2.5%;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+  .profile-row {
+    flex-direction: column; /* 열 방향 정렬 */
+    align-items: flex-start; /* 텍스트와 이미지를 위쪽 정렬 */
+  }
+
+  .profile-text {
+    width: 100%;
+    padding: 2.5%;
+  }
+
+  .profile-image {
+    width: 100%;
+    padding: 2.5%;
+  }
+
+  .profile-image img {
+    width: 100%; /* 가로 100%로 표시 */
+    max-width: 100%;
+    height: auto;
+  }
+}
