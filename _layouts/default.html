@@ -93,10 +93,10 @@
             {% if forloop.index > 3 %}
             <tr style="height: auto; line-height: 1.2;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 15%; vertical-align: middle;">
-                {{ post.date | date: "%b %Y" }}
+                <p style="margin:0;">{{ post.date | date: "%b %Y" }}</p>
               </td>
               <td style="padding: 0px 2.5% 0px 2.5%; width: 85%; vertical-align: middle;">
-                {{ post.excerpt }}
+                <p style="margin:0;">{{ post.excerpt }}</p>
               </td>
             </tr>
             {% endif %}
