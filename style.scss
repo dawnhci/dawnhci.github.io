@@ -115,7 +115,7 @@ span.highlight {
 //@import "highlights";
 //@import "svg-icons";
 
-/* 기본 스타일 */
+/* 기본 레이아웃 */
 .profile-table {
   width: 100%;
   max-width: 800px;
@@ -126,6 +126,7 @@ span.highlight {
 .profile-row {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* 텍스트와 이미지 간 거리 조정 */
   padding: 0;
 }
 
@@ -145,11 +146,16 @@ span.highlight {
   max-width: 100%;
 }
 
-/* 모바일 스타일 */
+/* 모바일 레이아웃 */
 @media (max-width: 768px) {
   .profile-row {
-    flex-direction: column; /* 열 방향 정렬 */
-    align-items: flex-start; /* 텍스트와 이미지를 위쪽 정렬 */
+    flex-direction: column; /* 텍스트와 이미지를 세로로 배치 */
+    align-items: flex-start;
+  }
+
+  .profile-image {
+    width: 30%;
+    align-self: flex-start; /* 사진을 텍스트 왼쪽으로 이동 */
   }
 
   .profile-text {
@@ -157,14 +163,25 @@ span.highlight {
     padding: 2.5%;
   }
 
-  .profile-image {
-    width: 100%;
-    padding: 2.5%;
+  .profile-image img {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+/* 작은 화면 (스마트폰 등) */
+@media (max-width: 480px) {
+  .profile-row {
+    flex-direction: row; /* 텍스트와 이미지를 가로로 배치 */
+    align-items: center;
   }
 
-  .profile-image img {
-    width: 100%; /* 가로 100%로 표시 */
-    max-width: 100%;
-    height: auto;
+  .profile-image {
+    width: auto;
+    max-width: 20%; /* 이미지 크기 조정 */
+  }
+
+  .profile-text {
+    width: 75%;
   }
 }
