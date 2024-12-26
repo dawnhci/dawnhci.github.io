@@ -224,110 +224,80 @@
         <br>
         <br>
         <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;">
+        
+        <tbody id="recent-tvfilms">
+          {% assign tvfilms_posts = site.posts | where: "categories", "tvfilms" %}
+          {% for post in tvfilms_posts limit:2 %}
           <tr>
-            <td style="padding:2.5%; width:100%;vertical-align:middle">
-              <h2 style="margin:0; display:inline;">TV & Films</h2>
-              <a href="javascript:void(0);" id="toggle-tvfilms" style="font-size:14px; margin-left:10px; text-decoration:none; color:#007BFF;">
-                <i id="toggle-icon" class="fas fa-plus"></i>
-                <p>3+ years of experience as a concept designer and animator for animated feature film and TV shows, currently streaming globally.
-                </p>
-              </a>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;">
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{ post.title }}</h3>
+              <br>
+              {{ post.authors }}
+              <br>
+              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.imdb %}
+              [<a href="{{ post.imdb }}">IMDb</a>]&nbsp;
+              {% endif %}
+              {% if post.youtube %}
+              [<a href="{{ post.youtube }}">YouTube</a>]&nbsp;
+              {% endif %}
+              {% if post.netflix %}
+              [<a href="{{ post.netflix }}">Netflix</a>]&nbsp;
+              {% endif %}
+              {% if post.press %}
+              [<a href="{{ post.press }}">Press</a>]&nbsp;
+              {% endif %}
+              {% if post.reel %}
+              [<a href="{{ post.reel }}">reel</a>]&nbsp;
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
             </td>
           </tr>
-        </table>
+          {% endfor %}
+        </tbody>
         
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody id="recent-tvfilms">
-                {% assign news_posts = site.posts | where: "categories", "tvfilms" %}
-                {% for post in news_posts %}
-                {% if forloop.index <= 2 %}
-                  <tr>
-                    <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                      <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;">
-                    </td>
-                    <td style="padding:2.5%;width:75%;vertical-align:middle">
-                      <h3>{{post.title}}</h3>
-                      <br>
-                      {{post.authors}}
-                      <br>
-                      <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-                      <br>
-                      {% if post.imdb %}
-                      [<a href="{{post.imdb}}">IMDb</a>]&nbsp;
-                      {% endif %}
-                      {% if post.youtube %}
-                      [<a href="{{post.youtube}}">YouTube</a>]&nbsp;
-                      {% endif %}
-                      {% if post.netflix %}
-                      [<a href="{{post.netflix}}">Netflix</a>]&nbsp;
-                      {% endif %}
-                      {% if post.press %}
-                      [<a href="{{post.press}}">Press</a>]&nbsp;
-                      {% endif %}
-                      {% if post.reel %}
-                      [<a href="{{post.reel}}">reel</a>]&nbsp;
-                      {% endif %}
-                      <p></p>
-                      {{ post.excerpt }}
-                    </td>
-                  </tr>
-                {% endif %}
-              {% endfor %}
-              </tbody>
+        <tbody id="all-tvfilms" style="display:none;">
+          {% assign tvfilms_posts = site.posts | where: "categories", "tvfilms" %}
+          {% for post in tvfilms_posts offset:2 %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;">
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{ post.title }}</h3>
+              <br>
+              {{ post.authors }}
+              <br>
+              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.imdb %}
+              [<a href="{{ post.imdb }}">IMDb</a>]&nbsp;
+              {% endif %}
+              {% if post.youtube %}
+              [<a href="{{ post.youtube }}">YouTube</a>]&nbsp;
+              {% endif %}
+              {% if post.netflix %}
+              [<a href="{{ post.netflix }}">Netflix</a>]&nbsp;
+              {% endif %}
+              {% if post.press %}
+              [<a href="{{ post.press }}">Press</a>]&nbsp;
+              {% endif %}
+              {% if post.reel %}
+              [<a href="{{ post.reel }}">reel</a>]&nbsp;
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        
 
-              <tbody id="all-tvfilms" style="display:none;">
-                {% assign news_posts = site.posts | where: "categories", "tvfilms" %}
-                {% for post in news_posts %}
-                {% if forloop.index > 2 %}
-                  <tr>
-                    <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                      <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;">
-                    </td>
-                    <td style="padding:2.5%;width:75%;vertical-align:middle">
-                      <h3>{{post.title}}</h3>
-                      <br>
-                      {{post.authors}}
-                      <br>
-                      <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-                      <br>
-                      {% if post.imdb %}
-                      [<a href="{{post.imdb}}">IMDb</a>]&nbsp;
-                      {% endif %}
-                      {% if post.youtube %}
-                      [<a href="{{post.youtube}}">YouTube</a>]&nbsp;
-                      {% endif %}
-                      {% if post.netflix %}
-                      [<a href="{{post.netflix}}">Netflix</a>]&nbsp;
-                      {% endif %}
-                      {% if post.press %}
-                      [<a href="{{post.press}}">Press</a>]&nbsp;
-                      {% endif %}
-                      {% if post.reel %}
-                      [<a href="{{post.reel}}">reel</a>]&nbsp;
-                      {% endif %}
-                      <p></p>
-                      {{ post.excerpt }}
-                    </td>
-                  </tr>
-                {% endif %}
-              {% endfor %}
-          </tbody>
-            </table>
-          
-        <script>
-          document.getElementById('toggle-tvfilms').addEventListener('click', function () {
-            var allNews = document.getElementById('all-news');
-            var toggleIcon = document.getElementById('toggle-icon');
-            if (allNews.style.display === 'none') {
-              allNews.style.display = 'table-row-group';
-              toggleIcon.className = 'fas fa-minus'; 
-            } else {
-              allNews.style.display = 'none';
-              toggleIcon.className = 'fas fa-plus'; 
-            }
-          });
-        </script>
         <br>
         <br>
         <br>
