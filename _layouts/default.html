@@ -263,8 +263,8 @@
         <script>
           document.getElementById('toggle-tvfilms').addEventListener('click', function () {
             var allTvFilms = document.getElementById('all-tvfilms');
-            var toggleIcon = document.getElementById('toggle-icon');
-            if (allTvFilms.style.display === 'none') {
+            var toggleIcon = document.querySelector('#toggle-tvfilms i'); 
+            if (allTvFilms.style.display === 'none' || allTvFilms.style.display === '') {
               allTvFilms.style.display = 'table-row-group'; 
               toggleIcon.className = 'fas fa-minus'; 
             } else {
@@ -272,11 +272,12 @@
               toggleIcon.className = 'fas fa-plus'; 
             }
           });
-        </script>        
+        </script>
+             
         <br>
         <br>
         <br>
-        
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
