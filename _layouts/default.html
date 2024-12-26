@@ -176,55 +176,6 @@
         <br>
         <br>
         
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>TV & Films</h2>
-              <p>3+ years of experience as a concept designer and animator for animated feature film and TV shows, currently streaming globally.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% if post.categories contains 'tvfilms' %}
-              <tr>
-                <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                  <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;">
-                </td>
-                <td style="padding:2.5%;width:75%;vertical-align:middle">
-                  <h3>{{post.title}}</h3>
-                  <br>
-                  {{post.authors}}
-                  <br>
-                  <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-                  <br>
-                  {% if post.imdb %}
-                  [<a href="{{post.imdb}}">IMDb</a>]&nbsp;
-                  {% endif %}
-                  {% if post.youtube %}
-                  [<a href="{{post.youtube}}">YouTube</a>]&nbsp;
-                  {% endif %}
-                  {% if post.netflix %}
-                  [<a href="{{post.netflix}}">Netflix</a>]&nbsp;
-                  {% endif %}
-                  {% if post.press %}
-                  [<a href="{{post.press}}">Press</a>]&nbsp;
-                  {% endif %}
-                  {% if post.reel %}
-                  [<a href="{{post.reel}}">reel</a>]&nbsp;
-                  {% endif %}
-                  <p></p>
-                  {{ post.excerpt }}
-                </td>
-              </tr>
-            {% endif %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:collapse;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%; width:100%;vertical-align:middle">
