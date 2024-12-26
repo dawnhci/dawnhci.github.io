@@ -77,10 +77,10 @@
             {% if forloop.index <= 3 %}
             <tr style="height: auto; line-height: 1.2;">
               <td style="padding: 0px 2.5% 0px 2.5%; width: 15%; vertical-align: middle;">
-                <p style="height: auto; line-height: 0;">{{ post.date | date: "%b %Y" }}</p>
+                {{ post.date | date: "%b %Y" }}
               </td>
               <td style="padding: 0px 2.5% 0px 2.5%; width: 85%; vertical-align: middle;">
-                <p style="height: auto; line-height: 0;">{{ post.excerpt }}</p>
+                {{ post.excerpt }}
               </td>
             </tr>
             {% endif %}
@@ -123,7 +123,7 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research & Projects</h2>
-              <p>
+              <p style="margin:0;">
                 I am interested in Human-Computer Interaction, Anthropomorphic AI, Virtual Humans, Machine Creativity, and Human-Centered Design in Immersive Media.
               </p>
             </td>
@@ -299,7 +299,7 @@
           <tr>
             <td style="padding:0px">
               <p style="text-align:right;font-size:small">
-                ⓒ 2024 Dawon Kim.&nbsp;&nbsp;Last updated: December 2024.&nbsp;&nbsp;[<a href="https://jonbarron.info/">site template</a>]
+                ⓒ 2024 Dawon Kim.&nbsp;&nbsp;<em>Last updated: December 2024.</em>&nbsp;&nbsp;[<a href="https://jonbarron.info/">site template</a>]
               </p>
             </td>
           </tr>
