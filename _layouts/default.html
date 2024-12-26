@@ -225,78 +225,7 @@
         <br>
         <br>
         
-        <tbody id="recent-tvfilms">
-          {% assign tvfilms_posts = site.posts | where: "categories", "tvfilms" %}
-          {% for post in tvfilms_posts limit:2 %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;">
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{ post.title }}</h3>
-              <br>
-              {{ post.authors }}
-              <br>
-              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.imdb %}
-              [<a href="{{ post.imdb }}">IMDb</a>]&nbsp;
-              {% endif %}
-              {% if post.youtube %}
-              [<a href="{{ post.youtube }}">YouTube</a>]&nbsp;
-              {% endif %}
-              {% if post.netflix %}
-              [<a href="{{ post.netflix }}">Netflix</a>]&nbsp;
-              {% endif %}
-              {% if post.press %}
-              [<a href="{{ post.press }}">Press</a>]&nbsp;
-              {% endif %}
-              {% if post.reel %}
-              [<a href="{{ post.reel }}">reel</a>]&nbsp;
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-        
-        <tbody id="all-tvfilms" style="display:none;">
-          {% assign tvfilms_posts = site.posts | where: "categories", "tvfilms" %}
-          {% for post in tvfilms_posts offset:2 %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{ post.image }}" alt="project image" style="width:auto; height:auto; max-width:100%;">
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{ post.title }}</h3>
-              <br>
-              {{ post.authors }}
-              <br>
-              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.imdb %}
-              [<a href="{{ post.imdb }}">IMDb</a>]&nbsp;
-              {% endif %}
-              {% if post.youtube %}
-              [<a href="{{ post.youtube }}">YouTube</a>]&nbsp;
-              {% endif %}
-              {% if post.netflix %}
-              [<a href="{{ post.netflix }}">Netflix</a>]&nbsp;
-              {% endif %}
-              {% if post.press %}
-              [<a href="{{ post.press }}">Press</a>]&nbsp;
-              {% endif %}
-              {% if post.reel %}
-              [<a href="{{ post.reel }}">reel</a>]&nbsp;
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-        
+
 
         <br>
         <br>
